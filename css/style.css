@@ -1,0 +1,249 @@
+body {
+	margin: 0px;
+	padding: 40px 0 0px 0;
+}
+
+h1, h2, h3, a {
+	font-family: Industry, monospace;
+	color: #2861ca;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+p {
+	font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+section {
+	max-width: 1200px;
+	max-height: 600px;
+	margin: 100px auto;
+}
+
+section::after, section::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-text {
+	width: calc(60% - 40px);
+}
+
+.grid-img {
+	width: calc(40% - 40px);
+	
+}
+
+section > div {
+	margin: 0 20px;
+	float: left;
+}
+
+section img {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.img-right {
+	text-align: right;
+}
+
+div > a {
+	display: block;
+	max-width: 120px;
+	text-align: center;
+	border: 2px solid;
+	text-decoration: none;
+	padding: 8px 20px 10px 20px;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
+div > a:hover {
+	background: #2861ca;
+	color: white;
+}
+
+.anime {
+	opacity: 0;
+	transform: translate3d(-100px,0,0);
+	transition: .3s;
+}
+
+.anime-start {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+nav {
+	width: 100%;
+	background: #010101;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	padding: 10px 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+}
+
+nav a:hover {
+	color: #34d33c;
+}
+ /* FOOTER */
+ footer {
+	font-family: Industry, monospace;
+	color: #2861ca;
+    background-color:  #19366d	;
+    
+	}
+footer .containerfooter{
+    padding: 0;
+    display: flex;
+}
+footer div h1{
+	display: flex;
+	font-family: Industry, monospace;
+	margin: 0 180px;
+    padding: 3%;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+footer section div img{
+	border-radius: 50%;
+    overflow: hidden;
+}
+footer div span {
+    display: flex;
+    margin: auto;
+    padding: 0 15%;
+
+}
+footer div p{
+    padding: 0 15%;
+    margin:  2px solid rgba(22, 185, 214, 0.267);
+}
+
+footer .itensredes {
+    font-size: 30rem;
+    text-align: center;
+}
+
+footer img {
+	width: 20%;
+}
+
+footer .contato {
+	padding: 0;
+	display: flex;
+	font-size: 0.8rem;
+	flex-direction: row;
+	width: 100%;
+	bottom: 0;
+}
+
+div .logos img{
+	margin:0;
+	display: flex;
+	padding: 20px;
+	flex-direction: row;
+	width: 9%;
+}
+  
+    /* Style the Image Used to Trigger the Modal */
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+  } 
