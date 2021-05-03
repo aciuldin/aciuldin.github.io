@@ -11,9 +11,9 @@
 <nav>
 	<ul>
 		<li><a href="#HOME">HOME</a></li>
-		<li><a href="#SOBRE">SOBRE</a></li>
 		<li><a href="#PROJETOS">PROJETOS</a></li>
-		<li><a href="#Sobre">SOBRE MIM</a></li>
+		<li><a href="#about_me">SOBRE MIM</a></li>
+        <li><a href="#CV">CV</a></li>
 		<li><a href="#CONTATO">CONTATO</a></li>
 	</ul>
 </nav>
@@ -35,7 +35,7 @@
     </section>
 
     <section class="anime" id="SOBRE">
-        
+       <!--    
         <div class="grid-text">
             <h2>Programas</h2>
             
@@ -57,9 +57,12 @@
             <a target="" href="#">Ver Mais</a>
         </div>
     </section>
-
+ --> 
     <section class="anime" id="PROJETOS">
         <div class="grid-text">
+            <div class="container_projetos">
+
+            </div>
             <h2>Portfólio</h2>
             <p>Seleção de alguns trabalhos e projetos.</p>
         </div>
@@ -85,20 +88,20 @@
                     </div>
                     <div class="row">
                         <div class="card_img">
-                            <img src="img/img05.jpg" class="small_img">
+                            <img src="img/img05.jpg" alt="Painel Power BI" class="small_img">
                         </div>
                             <div class="card_img">
-                                <img src="img/wordcloud.jpg" class="small_img">
+                                <img src="img/img06.jpg" alt="Uso e Ocupação do Solo" class="small_img">
                             </div>
                             <div class="card_img">
-                                <img src="img/ufv.jpg" class="small_img">
+                                <img src="img/img07.png" alt="Painel Queimadas INPE2020" class="small_img">
                             </div>
                     </div>
             </div> 
     </section>
 		
 	<section class="anime" id="web">
-        <div class="perfil" id="Sobre">
+        <div class="perfil" id="about_me">
 			<h2>SOBRE MIM</h2>
 		</div> 
         <div class="container_resume">
@@ -131,8 +134,8 @@
                     </li>
                         <br> 
 					<li class="li_resume">  
-                       <a  href="https://www.ufv.br/" target="_blank" class="link_resume_educ"> 
-                        <img src="img/ufv.gif" alt="Universidade Federal de Viçosa" href="" class="img_resume_educ"></a>
+                       <a  href="http://www.eam.ufv.br/" target="_blank" class="link_resume_educ"> 
+                        <img src="img/ufv.gif" alt="Universidade Federal de Viçosa" href="" class="img_resume_educ" background-color:(#000)></a>
                        <p>
                         07/2017 - Engenheiro Agrimensor e Cartógrafo </i>  
                         Universidade Federal de Viçosa - UFV
@@ -147,6 +150,9 @@
 
     <section class="anime" id="web">
         <div class="resume_CV">
+            <div class="perfil" id="CV">
+                <h2>CV</h2>
+            </div>
             <div class="img_resume">
                 <img src="./img/wordcloud.jpg" alt="Img 2">
             </div>
@@ -173,51 +179,43 @@
                                 Geoprocessamento aplicado à gestão ambiental (CAR, Licenças ambientais);
                                 Configuração, análise e atualização em Bancos de Dados Geográficos SGBDs;
                                 Elaboração de Mapas Temáticos, plantas topográficas, produtos cartográficos e desenhos técnicos em ambiente SIG e CAD.
-                                </span>
-                    
+                                </span>         
            </div>
 
         </div>
 
     </section>
-
-    <section class="anime" id="web">
-        <div class="contato" id="CONTATO"></div>
-            <div class="grid-img img-right"> </div>  
-    </section>
-
-<footer>
-	
-	<h2> Contato: </h2>
-        <div>       
-        <p> Entre em contato através do e-mail ou telefone: </p>
-        <span>
-            <a href="mailto:athos.ciuldin@hotmail.com"><strong>E-mail:</strong> athos.ciuldin@hotmail.com</a>
-        </span>
-        <br>
-        <span>
-            <a href="tel:+5524993071890"><strong>Tel:</strong> (24)99307-1890</a>
-        </span>
-        <br>
-        <span>
-            <a href="https://goo.gl/maps/HNXT5f5NtY2aq16i6" target="_blank">Vassouras, Rio de Janeiro - BR</a>
-        </span>
-        </div>
-
-        
-            <div>
-                <span class="logos">
-                    <a href="https://www.linkedin.com/in/athosciuldin/"  target="_blank"> 
-                        <img src="./img/linkedin_dark.png" alt="Linkedin">
-                    </a>						
-                    <a href="https://github.com/aciuldin" target="_blank">
-                        <img src=".//img/github.png" alt="Github">
-                    </a>
-                </span>
-            </div>  
-        
-</footer>	
+    <footer class="containerfooter">
+    <section class="anime_footer" id="web">
+            <div class="contato" id="CONTATO">
+                <h2> Contato: </h2>         
+                </div>
+                    <div>
+                            <span>
+                                <a href="mailto:athos.ciuldin@hotmail.com"><strong>E-mail:</strong> athos.ciuldin@hotmail.com</a>
+                            </span>
+                            <br>
+                            <span>
+                                <a href="tel:+5524993071890"><strong>Tel:</strong> (24)99307-1890</a>
+                            </span>
+                            <br>
+                            <span>
+                                <a href="https://goo.gl/maps/HNXT5f5NtY2aq16i6" target="_blank">Vassouras, Rio de Janeiro - BR</a>
+                            </span>
+                        <div class="links_contato">
+                                <a class="logos" href="https://www.linkedin.com/in/athosciuldin/"  target="_blank"> 
+                                    <img src="./img/linkedin_dark.png" alt="Linkedin">
+                                </a>						
+                                <a class="logos" href="https://github.com/aciuldin" target="_blank">
+                                    <img src=".//img/github.png" alt="Github">
+                                </a>
+                            
+                        </div>
+                    </div> 
+                </div>      
+            </footer>	
 			
+</section>			
 
 	
 
