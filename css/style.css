@@ -198,27 +198,24 @@ flex-direction: row;
 
  /* FOOTER */
  .anime_footer {
-	padding: 0;
-	border-left: solid auto #19366d;
+	width: 100%;
+	border: solid 20px #19366d;
 	font-family: Industry, monospace;
 	color: #2861ca;
     background-color:  #19366d	;
 	margin: 0;
-	width: 100%;
-	max-width: 1200px;
-    
-	}
+	padding:0;
+}
 
 
 .containerfooter{
-	max-width: 1800px;
-	margin: 0 0;
+	margin: 0;
 	width: 100%;
-	border: solid 100px #2861ca;
+	border: solid 10px #19366d;
 	padding-bottom: 0px;
     display: flex;
-	flex-direction: column;
-	justify-items: center;
+	position: bottom fixed;
+	z-index: 100;
 
 }
 .contato h2{
@@ -368,12 +365,12 @@ div .logos a img{
 	opacity: 1;
 }
 
-  /* Add Animation - Zoom in the Modal 
+  /* Add Animation - Zoom in the Modal */ 
   .modal-content, #caption {
 	animation-name: zoom;
 	animation-duration: 0.6s;
   }
-  */
+  
 
 
   @keyframes zoom {
@@ -399,13 +396,13 @@ div .logos a img{
 	cursor: pointer;
   }
   
-  /* 100% Image Width on Smaller Screens 
+/*  100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
 	.modal-content {
 	  width: 100%;
 	}
   } 
-*/
+
   div.gallery {
 	border: 1px solid #ccc;
   }
@@ -431,7 +428,7 @@ div .logos a img{
   .responsive {
 	padding: 0 6px;
 	float: left;
-	width: 24.99999%;
+	width: 30%;
   }
   
   @media only screen and (max-width: 700px) {
