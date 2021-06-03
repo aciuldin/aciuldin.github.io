@@ -122,7 +122,11 @@ nav a:hover {
 
 }
 .img_resume{
-	width: 250%;
+	width: 100%;
+}
+
+.resume_titulo{
+	font-size: 1.6vh;
 }
 
 .grid-text_resume{
@@ -182,6 +186,10 @@ nav a:hover {
 	display: flex;
 
 }
+.txt_cv{
+	font-size: 2.5vh;
+}
+
 .container_resume{
 display: flex;
 flex-direction: row;
@@ -205,6 +213,9 @@ flex-direction: row;
     background-color:  #19366d	;
 	margin: 0;
 	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 
@@ -273,7 +284,7 @@ footer .contato {
 	padding: 0;
 	display: flex;
 	font-size: 0.8rem;
-	flex-direction: row;
+	flex-direction: flex;
 	width: 100%;
 	bottom: 0;
 }
@@ -325,8 +336,10 @@ div .logos a img{
 	transform:scale(1);
 }
 .modal{
-	width: 90vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: rgba(0, 0, 0, .6);
 	position: fixed;
 	visibility: hidden;
@@ -338,7 +351,9 @@ div .logos a img{
 .modal_content{
 	display: flex;
 	align-items: center;
-	height: 100vh;
+	height: auto;
+	min-height: 100%;
+	border-radius: 0;
 	justify-content: center;
 }
 
